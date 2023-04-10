@@ -3,4 +3,7 @@
     <string name="txtFirstNumberHint">Please enter first number.</string>
     <string name="txtSecondNumberHint">Please enter second number</string>
     <string name="btnAddititonText">Addition</string>
+    <string name="lblName">Name:</string>
+    <string name="lblSurname">Surname</string>
+    <string name="btnSave">Save</string>
 </resources>

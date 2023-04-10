@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/marginMedium"
+    tools:context=".ConstraintLayoutActivity">
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="@string/lblName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/editTxtName"
+        />
+
+    <EditText
+        android:id="@+id/editTxtName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintLeft_toRightOf="@id/lblName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/lblSurname"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="@string/lblSurname"
+        app:layout_constraintTop_toBottomOf="@id/lblName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/editTxtSurname"
+        />
+
+    <EditText
+        android:id="@+id/editTxtSurname"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintLeft_toRightOf="@id/lblSurname"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTxtName"
+        />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSave"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTxtSurname"
+        />
+
+    <TextView
+        android:id="@+id/lblResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSave"
+     />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
